@@ -1,0 +1,40 @@
+{
+    "name": "RxSpamBot",
+    "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
+    "stack": "container",
+    "keywords": [
+      "telegram",
+      "auto-filter",
+      "filter",
+      "best",
+      "indian",
+      "pyrogram",
+      "media",
+      "search",
+      "channel",
+      "index",
+      "inline"
+    ],
+    "website": "https://github.com/sandippshah/RxSpamBot",
+    "repository": "https://github.com/sandippshah/RxSpamBot",
+    "env": {
+        "API_ID": {
+            "description": "Get this value from https://my.telegram.org",
+            "required": false 
+        },
+        "API_HASH": {
+            "description": "Get this value from https://my.telegram.org",
+            "required": false 
+        }
+    },
+    "addons": [],
+    "buildpacks": [{
+        "url": "heroku/python"
+    }],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "eco"
+        }
+    }
+}
